@@ -1,0 +1,55 @@
+include pug/libs/_libs
+
+doctype html
+html(lang='en')
+  include pug/_head
+  body
+    header.header 
+      h1.header__title TESTS
+    main.main 
+      aside.sidebar 
+        .sidebar__header
+          button.sidebar__header__hide-btn
+            +image('arrow')(class='sidebar__header__hide-btn__arrow')
+            +image('burger')(class='sidebar__header__hide-btn__burger hidden')
+          .sidebar__header__title ТЕСТЫ
+        ul.sidebar__test-list 
+      section.contents
+        .contents__header.hidden
+          h3.contents__header__title Описание
+          .contents__header__start-test.hidden
+            button.contents__header__start-test__btn-exit Выход
+            h3.contents__header__start-test__title 
+            .contents__header__start-test__inf
+              button.contents__header__start-test__btn-reset Сбросить все ответы
+              span |
+              span 2/5
+              span |
+              .timer 0:5:00
+        .contents__body
+          .contents__body__descr-test
+            p.contents__descr.hidden 
+            button.contents__body__start-btn.hidden Начать
+            button.contents__body__cancel-btn.hidden Отмена
+          span.contents__notice Выберете тест из списка
+          
+          ul.contents__body__question-list
+
+          .contents__body_completed-test.hidden
+            h3.contents__body_completed-test__title Тест завершён
+            span.contents__body_completed-test__right-answers
+            .contents__body_completed-test__answers-list 
+              h3.contents__body_completed-test__title-list Ваши ответы
+              ul.contents__body_completed-test__list
+        .contents__body__footer 
+          button.contents__body__footer__btn.hidden Завершить
+            
+    footer.footer 2020 © INTAS-Company.com
+
+    #myModal.modal
+      .modal-content
+        h3 Вы уверены что хотите выйти?
+        span Все результаты будут сброшены
+        .modal-buttons
+          button.modal-buttons__exit Выход
+          button.modal-buttons__cancel Отмена
