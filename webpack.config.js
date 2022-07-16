@@ -10,8 +10,8 @@ module.exports = {
     mode: mode,
     entry: {
         scripts: './src/index.js',
-        modal: './src/js/modal.js',
-        timer: './src/js/timer.js'
+        timer: './src/js/timer.js',
+        sidebar: './src/js/sidebar.js',
     },
     output: {
         filename: '[name].[contenthash].js',

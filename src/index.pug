@@ -23,14 +23,12 @@ html(lang='en')
             .contents__header__start-test__inf
               button.contents__header__start-test__btn-reset Сбросить все ответы
               span |
-              span 2/5
-              span |
               .timer 0:5:00
         .contents__body
-          .contents__body__descr-test
-            p.contents__descr.hidden 
-            button.contents__body__start-btn.hidden Начать
-            button.contents__body__cancel-btn.hidden Отмена
+          .contents__body__descr-test.hidden
+            p.contents__descr 
+            button.contents__body__start-btn Начать
+            button.contents__body__cancel-btn Отмена
           span.contents__notice Выберете тест из списка
           
           ul.contents__body__question-list
@@ -40,7 +38,6 @@ html(lang='en')
             span.contents__body_completed-test__right-answers
             .contents__body_completed-test__answers-list 
               h3.contents__body_completed-test__title-list Ваши ответы
-              ul.contents__body_completed-test__list
         .contents__body__footer 
           button.contents__body__footer__btn.hidden Завершить
             
